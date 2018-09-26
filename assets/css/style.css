@@ -1,0 +1,45 @@
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  color: white; }
+
+.bouton {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around; }
+  .bouton [class^=bt] {
+    margin: 5px;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    border: 3px white solid;
+    -webkit-transition-property: background-color, color, -webkit-transform;
+    transition-property: background-color, color, -webkit-transform;
+    -o-transition-property: transform, background-color, color;
+    transition-property: transform, background-color, color;
+    transition-property: transform, background-color, color, -webkit-transform;
+    -webkit-transition-duration: 0.75s;
+    -o-transition-duration: 0.75s;
+    transition-duration: 0.75s; }
+  .bouton .bt_1:hover {
+    background-color: white;
+    color: black; }
+  .bouton .bt_2:hover {
+    background-color: white;
+    color: black;
+    -webkit-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    transform: scale(1.3); }
+  .bouton .bt_3:hover {
+    background-color: white;
+    color: black;
+    -webkit-transform: translateX(30px);
+    -ms-transform: translateX(30px);
+    transform: translateX(30px); }

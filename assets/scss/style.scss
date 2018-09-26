@@ -1,0 +1,41 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin:0;
+    padding:0;
+    background-color: black;
+    color:white;
+}
+
+.bouton{
+    display:flex;
+    justify-content: space-around;
+    [class^=bt]{
+        margin:5px;
+        padding:10px;
+        text-decoration:none;
+        color:white;
+        border:3px white solid;
+        transition-property:transform, background-color, color;
+        transition-duration: 0.75s;
+    }
+    .bt_1:hover{
+            background-color: white;
+            color:black;
+    }
+
+    .bt_2:hover{
+            background-color: white;
+            color:black;
+            transform: scale(1.3); 
+    }
+
+    .bt_3:hover{
+            background-color: white;
+            color:black;
+            transform: translateX(30px);
+    }
+   
+}
