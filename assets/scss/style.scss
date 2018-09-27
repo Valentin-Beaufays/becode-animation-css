@@ -1,3 +1,4 @@
+//init
 *{
     box-sizing: border-box;
 }
@@ -8,10 +9,11 @@ body{
     background-color: black;
     color:white;
 }
-
+//part 1
 .bouton{
     display:flex;
     justify-content: space-around;
+    margin-bottom:20px;
     [class^=bt]{
         margin:5px;
         padding:10px;
@@ -39,3 +41,46 @@ body{
     }
    
 }
+//part 2
+.menu{
+    display:flex;
+    background-color:grey;
+
+    .sidebar{
+        display:flex;
+        flex-direction: column;
+
+        img{
+            width:70px;
+            height:70px;
+            text-decoration-color:Orange;
+            background-color:rgb(87, 87, 87); 
+            padding: 20px;
+            transition-property: background-color;
+            transition-duration: 0.75s;
+        }   
+        .imgV{
+            background-color: rgb(53, 53, 53);
+            padding: 10px;
+        }
+        img:hover{
+            background-color: whitesmoke;
+        }
+    }
+//pop-up
+    .pop-up{
+        position: ;
+        .pop{
+            height:70px;
+            width:140px;
+        }
+    }
+}
+
+.debug{
+    border:red solid 2px;
+}
+
+
+
+
