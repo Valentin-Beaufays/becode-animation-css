@@ -1,4 +1,5 @@
 //init
+$menusize:50px;
 *{
     box-sizing: border-box;
 }
@@ -8,6 +9,18 @@ body{
     padding:0;
     background-color: black;
     color:white;
+}
+//titres
+h2{
+    text-align:center;
+    text-decoration: underline;
+    font-weight: bold;
+
+    &.title{
+    background-color:rgb(189, 189, 189);
+    padding: 0;
+    margin:0;
+    }
 }
 //part 1
 .bouton{
@@ -42,44 +55,63 @@ body{
    
 }
 //part 2
-.menu{
-    display:flex;
-    background-color:grey;
+.sidebar{
+    background-color:rgb(189, 189, 189);
+    height: auto;
+    ul{
+        padding-left:0px;
+        margin:0;
+        padding-top:0px;
+        li{
+            list-style: none;
+            width:$menusize;
+            display:flex;
+            a{
+                display: flex;
+            }
+            img{
+                height:$menusize;
+                width:$menusize;
+                padding:10px;
+                background-color: rgb(104, 103, 103);
+                display: block;
+                transition-property: background-color;
+                transition-duration: 0.75s;
+            }
+            
+            .first{
+                background-color: rgb(66, 65, 65);
+                padding:5px;
+            }
 
-    .sidebar{
-        display:flex;
-        flex-direction: column;
-
-        img{
-            width:70px;
-            height:70px;
-            text-decoration-color:Orange;
-            background-color:rgb(87, 87, 87); 
-            padding: 20px;
-            transition-property: background-color;
-            transition-duration: 0.75s;
-        }   
-        .imgV{
-            background-color: rgb(53, 53, 53);
-            padding: 10px;
+            .pop-up{
+                position: absolute;
+                text-align:center;
+                width:2*$menusize;
+                transform:translateX(-(2*$menusize));
+                color:rgba(255, 255, 255, 0);
+                background-color: rgba(66, 65, 65, 0);
+                transition:transform 0.5s, background-color 1s, color 1s;
+            }
         }
-        img:hover{
-            background-color: whitesmoke;
+        li:hover{
+            
+            img{
+                background-color: whitesmoke;
+            }
+            .pop-up{
+                background-color: rgb(66, 65, 65);
+                color:whitesmoke;
+                transform:translateX($menusize);
+            }
         }
     }
-//pop-up
-    .pop-up{
-        position: ;
-        .pop{
-            height:70px;
-            width:140px;
-        }
-    }
+    
 }
-
 .debug{
-    border:red solid 2px;
-}
+        border:red solid 1px;
+    }
+
 
 
 
